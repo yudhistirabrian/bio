@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="build.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <title>Website Bio</title>
+   </head>
+   <body>
+      <div class="flex justify-center flex-col items-center">
+         <h1 class="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500 mb-6 sm:text-3xl 2xl:text-4xl">Welcome to my Bio</h1>
+
+         <div>
+            <img src="img/photo-profile.jpg" alt="Photo Profile" width="150" class="rounded-full mx-auto shadow-sm cursor-pointer" id="img-profile" />
+            <h2 class="mt-1 text-center italic font-medium">Yudhistira Brian P. | 18 y.o | Gresik</h2>
+         </div>
+
+         <div class="fixed flex justify-center items-center top-0 z-10 h-full w-full bg-black/50 cursor-pointer" id="lightbox">
+            <img src="img/photo-profile.jpg" alt="photo-profile" width="500" id="img-lightbox" />
+         </div>
+
+         <div class="my-5">
+            <a href="https://wa.me/6281210977855" target="_blank">
+               <div class="bg-slate-50 px-8 py-5 rounded-2xl shadow-md my-3 text-center w-96">
+                  <h3 class="font-bold text-transparent tracking-wider bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500 text-sm md:text-lg 2xl:text-xl"><i class="fa-brands fa-whatsapp"></i> +62 812-1097-7855</h3>
+               </div>
+            </a>
+            <a href="https://www.instagram.com/yudhstirabrian._/" target="_blank">
+               <div class="bg-slate-50 px-8 py-5 rounded-2xl shadow-md my-3 text-center w-96">
+                  <h3 class="font-bold text-transparent tracking-wider bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500 text-sm md:text-lg 2xl:text-xl"><i class="fa-brands fa-instagram"></i> Instagram</h3>
+               </div>
+            </a>
+            <a href="#" target="_blank">
+               <div class="bg-slate-50 px-8 py-5 rounded-2xl shadow-md my-3 text-center w-96">
+                  <h3 class="font-bold text-transparent tracking-wider bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500 text-sm md:text-lg 2xl:text-xl"><i class="fa-brands fa-facebook"></i> Facebook</h3>
+               </div>
+            </a>
+            <a href="#" target="_blank">
+               <div class="bg-slate-50 px-8 py-5 rounded-2xl shadow-md my-3 text-center w-96">
+                  <h3 class="font-bold text-transparent tracking-wider bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500 text-sm md:text-lg 2xl:text-xl"><i class="fa-brands fa-twitter"></i> Twitter</h3>
+               </div>
+            </a>
+            <a href="https://github.com/BrianTzy" target="_blank">
+               <div class="bg-slate-50 px-8 py-5 rounded-2xl shadow-md my-3 text-center w-96">
+                  <h3 class="font-bold text-transparent tracking-wider bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500 text-sm md:text-lg 2xl:text-xl"><i class="fa-brands fa-github"></i> GitHub</h3>
+               </div>
+            </a>
+            <button id="copy-btn">
+               <div class="bg-slate-50 px-8 py-5 rounded-2xl shadow-md my-3 text-center w-96">
+                  <h3 class="font-bold text-transparent tracking-wider bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500 text-sm md:text-lg 2xl:text-xl" id="copied-text">yudhistiraabriann03@gmail.com</h3>
+               </div>
+            </button>
+         </div>
+      </div>
+
+      <span class="fixed bottom-5 right-5 p-3 bg-black text-white rounded-lg hidden" id="alert">Copied!</span>
+
+      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>
